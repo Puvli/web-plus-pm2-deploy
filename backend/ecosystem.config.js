@@ -3,6 +3,13 @@ dotenv.config({ path: "./env.deploy" });
 
 const { DEPLOY_USER, DEPLOY_HOST, DEPLOY_PATH, DEPLOY_REF, DEPLOY_REPOSITORY } =
   process.env;
+  console.log({
+    DEPLOY_USER,
+    DEPLOY_HOST,
+    DEPLOY_PATH,
+    DEPLOY_REF,
+    DEPLOY_REPOSITORY,
+  });
 
 module.exports = {
   apps: [
